@@ -65,7 +65,7 @@ button {
 	if (!AdMob) { alert( 'admob plugin not ready' ); return; }
 	initAd();
         // display a banner at startup
-        createSelectedBanner();
+        prepareInterstitial();
     }
 	
     function initAd(){
