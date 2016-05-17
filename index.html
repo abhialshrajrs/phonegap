@@ -112,7 +112,7 @@ button {
 	
     function prepareInterstitial() {
         var autoshow = document.getElementById('autoshow').checked;
-        AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:autoshow});
+        AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:"checked"});
     }
     function onResize(){
         var s = document.getElementById('sizeinfo');
