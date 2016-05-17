@@ -104,16 +104,17 @@ button {
     }
     
    
-    function createSelectedBanner() {
+    /*function createSelectedBanner() {
     	
         AdMob.createBanner( {adId:admobid.banner, adSize: 'SMART_BANNER', position:8} );
 		
-    }
+    }*/
 	
     function prepareInterstitial() {
-        var autoshow = document.getElementById('autoshow').checked;
-        AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:'true'});
+        //var autoshow = document.getElementById('autoshow').checked;
+        
     }
+    AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:true});
     function onResize(){
         var s = document.getElementById('sizeinfo');
         s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
